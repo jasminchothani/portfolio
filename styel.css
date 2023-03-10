@@ -225,6 +225,10 @@ hr {
     border-color: transparent;
 }
 
+.collapse:not(.show) {
+    display: none;
+}
+
 @media only screen and (max-width: 991px) {
     .header {
         position: static;
@@ -494,7 +498,8 @@ a.theme-link {
 .list-inline-item a {
     color: #54B689;
 }
-.btn-send{
+
+.btn-send {
     color: #fff;
     background: #48a97c;
     border-color: #65bd95;
