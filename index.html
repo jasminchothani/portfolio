@@ -14,9 +14,13 @@
     <!-- external css -->
     <link href="styel.css" rel="stylesheet">
 
+    <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- aos animation css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
 
@@ -111,10 +115,10 @@
                 </nav>
             </div>
         </header>
-        <div class="main-wrapper">
+        <div class="main-wrapper overflow-hidden">
             <section class="about-me-section aboutme p-3 p-lg-5 theme-bg-light" id="aboutme">
                 <div class="container">
-                    <div class="profile-teaser row align-items-center">
+                    <div class="profile-teaser row align-items-center" data-aos="fade-up" data-aos-duration="2000">
                         <div class="col-md-7 col-lg-7">
                             <h2 class="name font-weight-bold mb-1">Jasmin Chothani</h2>
                             <div class="tagline mb-3">Junior frontend Designer </div>
@@ -146,7 +150,7 @@
             </section>
 
             <section class="overview-section p-3 p-lg-5">
-                <div class="container">
+                <div class="container" data-aos="fade-up">
                     <h2 class="section-title font-weight-bold mb-3">What I do</h2>
                     <div class="section-intro mb-5">I have more than 1 years' experience building frontend web design.
                         Below is a quick overview of my main technical skill sets and technologies I
@@ -156,8 +160,9 @@
                             portfolio</a></div>
                     <div class="row">
                         <div class="item col-6 col-lg-4">
-                            <div class="item-inner">
-                                <div class="item-icon"><i class="fab fa-html5 me-2 fa-2x"></i>
+                            <div class="item-inner" data-aos="zoom-in">
+                                <div class="item-icon">
+                                    <i class="fab fa-html5 me-2 fa-2x"></i>
                                 </div>
                                 <h3 class="item-title">HTML</h3>
                                 <!-- <div class="item-desc">List skills/technologies here. You can change the icon above to
@@ -169,7 +174,7 @@
                             </div>
                         </div>
                         <div class="item col-6 col-lg-4">
-                            <div class="item-inner">
+                            <div class="item-inner" data-aos="zoom-in">
                                 <div class="item-icon">
                                     <i class="fab fa-css3-alt fa-2x"></i>
                                 </div>
@@ -199,7 +204,7 @@
                             </div>
                         </div> -->
                         <div class="item col-6 col-lg-4">
-                            <div class="item-inner">
+                            <div class="item-inner" data-aos="zoom-in">
                                 <div class="item-icon">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="45" height="61" fill="#7511f5"
                                         class="bi bi-bootstrap" viewBox="0 0 16 16">
@@ -219,7 +224,7 @@
                             </div>
                         </div>
                         <div class="item col-6 col-lg-4">
-                            <div class="item-inner">
+                            <div class="item-inner" data-aos="zoom-out">
                                 <div class="item-icon">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="45" height="61" viewBox="0 0 24 24">
                                         <path fill="#1A1918"
@@ -237,7 +242,7 @@
                             </div>
                         </div>
                         <div class="item col-6 col-lg-4">
-                            <div class="item-inner">
+                            <div class="item-inner" data-aos="zoom-out">
                                 <div class="item-icon">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="45" height="61" viewBox="0 0 32 32">
                                         <path fill="#070444" d="M24.099 2H8.837v28h20.91V7.888l-5.579-5.816L24.099 2" />
@@ -259,7 +264,7 @@
                             </div>
                         </div>
                         <div class="item col-6 col-lg-4">
-                            <div class="item-inner">
+                            <div class="item-inner" data-aos="zoom-out">
                                 <div class="item-icon">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="45" height="61"
                                         viewBox="0 0 256 256">
@@ -300,7 +305,7 @@
 
             <!-- portfolio start -->
             <section class="cta-section theme-bg-light py-5" id="portfolio">
-                <div class="container text-center single-col-max-width">
+                <div class="container text-center single-col-max-width" data-aos="fade-down-right">
                     <h2 class="heading">Portfolio</h2>
                     <div class="intro">
                         <p>Welcome to my online portfolio. I'm taking on freelance work at the moment. Want some help
@@ -313,22 +318,22 @@
 
             <section class="projects-list px-3 py-5 p-md-5 d-flex justify-content-center">
                 <div class="d-block align-items-start">
-                    <div class="nav nav-pills mb-3 justify-content-center" id="v-pills-tab" role="tablist"
-                        aria-orientation="vertical">
-                        <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill"
-                            data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home"
-                            aria-selected="true">Projects</button>
+                    <div class="nav nav-pills mb-3 justify-content-center" data-aos="fade-up">
+                        <button class="nav-link active" type="button">Projects
+                        </button>
                     </div>
                     <div class="tab-content">
                         <div>
                             <div class="row">
-                                <div class="col-md-6">
-                                    <div class="row position-relative">
+                                <div class="col-md-6 overflow-hidden">
+                                    <div class="row position-relative" data-aos="fade-right">
                                         <div class="mb-5">
                                             <div class="card project-card">
                                                 <div class="row">
                                                     <div class="col-12 col-xl-5 card-img-holder">
-                                                        <img src="images/kaka-pvc.png" class="card-img" alt="image">
+                                                        <!-- <img src="images/kaka-pvc.png" class="card-img" alt="image"> -->
+                                                        <img src="images/cimg/kaka-pvc.jpg" class="card-img"
+                                                            alt="image">
                                                     </div>
                                                     <div class="col-12 col-xl-7">
                                                         <div class="card-body">
@@ -344,11 +349,13 @@
                                                                 consectetuer adipiscing elit. Cum sociis natoque
                                                                 penatibus
                                                                 et magnis dis parturient montes.</p>
-                                                            <p class="card-text btn btn-hireme"><a
-                                                                    href="https://jasminchothani.github.io/kaka-pvc/"
+                                                            <p class="card-text btn btn-hireme">
+                                                                <a href="https://jasminchothani.github.io/kaka-pvc/"
                                                                     target="_blank"
                                                                     class="h6 text-white text-capitalize text-decoration-none">live
-                                                                    preview</a></p>
+                                                                    preview
+                                                                </a>
+                                                            </p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -356,13 +363,15 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-6">
-                                    <div class="row position-relative">
+                                <div class="col-md-6 overflow-hidden">
+                                    <div class="row position-relative" data-aos="fade-left">
                                         <div class="mb-5">
                                             <div class="card project-card">
                                                 <div class="row">
                                                     <div class="col-12 col-xl-5 card-img-holder">
-                                                        <img src="images/agency template.png" class="card-img"
+                                                        <!-- <img src="images/agency template.png" class="card-img"
+                                                            alt="image"> -->
+                                                        <img src="images/cimg/agency template.jpg" class="card-img"
                                                             alt="image">
                                                     </div>
                                                     <div class="col-12 col-xl-7">
@@ -394,13 +403,14 @@
                             </div>
 
                             <div class="row">
-                                <div class="col-md-6">
-                                    <div class="row position-relative">
+                                <div class="col-md-6 overflow-hidden">
+                                    <div class="row position-relative" data-aos="fade-left">
                                         <div class="mb-5">
                                             <div class="card project-card">
                                                 <div class="row">
                                                     <div class="col-12 col-xl-5 card-img-holder">
-                                                        <img src="images/cheetah.png" class="card-img" alt="image">
+                                                        <!-- <img src="images/cheetah.png" class="card-img" alt="image"> -->
+                                                        <img src="images/cimg/cheetah.jpg" class="card-img" alt="image">
                                                     </div>
                                                     <div class="col-12 col-xl-7">
                                                         <div class="card-body">
@@ -429,13 +439,14 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-6">
-                                    <div class="row position-relative">
+                                <div class="col-md-6 overflow-hidden">
+                                    <div class="row position-relative" data-aos="fade-right">
                                         <div class="mb-5">
                                             <div class="card project-card">
                                                 <div class="row">
                                                     <div class="col-12 col-xl-5 card-img-holder">
-                                                        <img src="images/brockyn.png" class="card-img" alt="image">
+                                                        <!-- <img src="images/brockyn.png" class="card-img" alt="image"> -->
+                                                        <img src="images/cimg/brockyn.jpg" class="card-img" alt="image">
                                                     </div>
                                                     <div class="col-12 col-xl-7">
                                                         <div class="card-body">
@@ -467,13 +478,14 @@
                             </div>
 
                             <div class="row">
-                                <div class="col-md-6">
-                                    <div class="row position-relative">
+                                <div class="col-md-6 overflow-hidden">
+                                    <div class="row position-relative" data-aos="fade-right">
                                         <div class="mb-5">
                                             <div class="card project-card">
                                                 <div class="row">
                                                     <div class="col-12 col-xl-5 card-img-holder">
-                                                        <img src="images/zola.png" class="card-img" alt="image">
+                                                        <!-- <img src="images/zola.png" class="card-img" alt="image"> -->
+                                                        <img src="images/cimg/zola.jpg" class="card-img" alt="image">
                                                     </div>
                                                     <div class="col-12 col-xl-7">
                                                         <div class="card-body">
@@ -502,20 +514,23 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-6">
-                                    <div class="row position-relative">
+                                <div class="col-md-6 overflow-hidden">
+                                    <div class="row position-relative" data-aos="fade-left">
                                         <div class="mb-5">
                                             <div class="card project-card">
                                                 <div class="row">
                                                     <div class="col-12 col-xl-5 card-img-holder">
-                                                        <img src="images/resturant.png" class="card-img" alt="image">
+                                                        <!-- <img src="images/resturant.png" class="card-img" alt="image"> -->
+                                                        <img src="images/cimg/resturant.jpg" class="card-img"
+                                                            alt="image">
                                                     </div>
                                                     <div class="col-12 col-xl-7">
                                                         <div class="card-body">
                                                             <h5 class="card-title"><a
                                                                     href="https://jasminchothani.github.io/food-landing-page/"
                                                                     target="_blank"
-                                                                    class="theme-link text-capitalize">food landing page</a></h5>
+                                                                    class="theme-link text-capitalize">food landing
+                                                                    page</a></h5>
                                                             <p class="card-text">Project intro lorem ipsum dolor
                                                                 sit
                                                                 amet,
@@ -523,8 +538,10 @@
                                                                 penatibus
                                                                 et magnis dis parturient montes.</p>
                                                             <p class="card-text btn btn-hireme"><a
-                                                                    href="https://jasminchothani.github.io/food-landing-page/" target="_blank"
-                                                                    class="h6 text-white text-capitalize text-decoration-none">live preview</a></p>
+                                                                    href="https://jasminchothani.github.io/food-landing-page/"
+                                                                    target="_blank"
+                                                                    class="h6 text-white text-capitalize text-decoration-none">live
+                                                                    preview</a></p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -542,16 +559,17 @@
 
             <!-- resume start -->
             <section class="cta-section theme-bg-light py-5" id="resume">
-                <div class="container text-center single-col-max-width">
+                <div class="container text-center single-col-max-width" data-aos="zoom-in">
                     <h2 class="heading mb-3">Online Resume</h2>
                     <a class="btn btn-primary btn-resume-dwnld" href="/images/jasmin.pdf" target="_blank" download><i
                             class="fas fa-file-pdf me-2"></i>Download PDF Resume</a>
                 </div>
             </section>
             <section>
-                <div class="container resume-container px-3 px-lg-5">
-                    <article class="resume-wrapper mx-auto p-5 mb-5 my-5 shadow-lg">
-                        <img class=" img-fluid mb-3 mb-lg-0 me-md-0" src="images/jasmin resume.jpg" alt="..">
+                <div class="container resume-container px-3 px-lg-5 overflow-hidden">
+                    <article class="resume-wrapper mx-auto p-5 mb-5 my-5 shadow-lg" data-aos="zoom-out">
+                        <!-- <img class=" img-fluid mb-3 mb-lg-0 me-md-0" src="images/jasmin resume.jpg" alt=".."> -->
+                        <img class=" img-fluid mb-3 mb-lg-0 me-md-0" src="images/cimg/jasmin resume.jpg" alt="..">
                     </article>
                 </div>
             </section>
@@ -559,7 +577,7 @@
 
             <!-- contact form start -->
             <section class="cta-section theme-bg-light py-5" id="contact">
-                <div class="container text-center single-col-max-width">
+                <div class="container text-center single-col-max-width" data-aos="fade-down-left">
                     <h2 class="heading">Contact</h2>
                     <div class="intro">
                         <p>Interested in hiring me for your project or just want to say hi? You can fill in the contact
@@ -600,7 +618,7 @@
 
             <section class="contact-section px-3 py-5 p-md-5">
                 <div class="container">
-                    <form id="contact-form" class="contact-form col-lg-8 mx-lg-auto" method="post" action="">
+                    <form id="contact-form" class="contact-form col-lg-8 mx-lg-auto" method="post" action="" data-aos="fade-down-right">
                         <h3 class="text-center mb-3">Get In Touch</h3>
                         <div class="row g-3">
                             <div class="col-12 col-md-6">
@@ -647,6 +665,12 @@
         crossorigin="anonymous"></script>
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 
+    <!-- aos animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
