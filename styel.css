@@ -228,6 +228,14 @@ hr {
 .collapse:not(.show) {
     display: none;
 }
+.header .navbar-dark .navbar-toggler {
+    border-radius: 2px;
+    -webkit-opacity: .8;
+    -moz-opacity: .8;
+    opacity: .8;
+    border: 1px solid rgba(255,255,255,0.8);
+    padding: 0.25rem 0.6rem;
+}
 
 @media only screen and (max-width: 991px) {
     .header {
@@ -299,6 +307,15 @@ hr {
     padding: 0.375rem 1rem;
 }
 
+.about-me-section .profile-teaser .img-fluid{
+    margin-left: auto;
+    display: block;
+}
+@media only screen and (max-width: 768px) {       
+    .about-me-section .profile-teaser .img-fluid{
+        margin: auto;
+    }    
+}
 
 /* what i doo start*/
 .section-title {
@@ -327,7 +344,11 @@ a.text-link {
 .overview-section .item {
     margin-bottom: 2rem;
 }
-
+@media only screen and (max-width: 768px) {       
+    .overview-section .item {
+        text-align: center;
+    }    
+}
 .overview-section .item-icon {
     font-size: 1.875rem;
     color: #54B689;
