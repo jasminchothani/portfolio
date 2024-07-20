@@ -74,6 +74,11 @@ header .blog-name a {
     background-color: #fff;
     color: #54B689;
 }
+.social-list a:hover, .social-list a:focus {
+    color: #40976f;
+    background-color: rgba(255, 255, 255, 0.8);
+    transition: all 0.4s ease-in-out;
+}
 
 hr:not([size]) {
     height: 1px;
@@ -291,7 +296,7 @@ hr {
     color: #54B689;
 }
 
-.bnt-portfolio,
+.btn-portfolio,
 .btn-resume {
     padding: 0.375rem .9rem;
     height: 2.5rem;
@@ -415,6 +420,13 @@ a.theme-link {
     color: #fff;
     background-color: #54B689;
     border-color: #54B689;
+    margin-bottom: 0;
+}
+
+.btn-hireme:hover {
+    color: #fff;
+    background-color: #1fbc73a6;
+    border-color: #1fbc73a6;
 }
 
 .nav-pills .nav-link.active {
@@ -438,11 +450,15 @@ a.theme-link {
 }
 
 .project-card {
-    border-radius: 0;
+    border-radius: 10px;
     background: #fafafa;
     border: 1px solid rgba(0, 0, 0, 0.025);
     position: relative;
     height: 100%;
+}
+
+.project-card:hover {
+    border: 1px solid #54B689;
 }
 
 .project-card .card-img-holder {
@@ -452,13 +468,14 @@ a.theme-link {
 }
 
 .project-card .card-img {
-    border-radius: 0;
+    border-radius: 10px;
 }
 
 .project-card .card-title {
     font-size: 1.125rem;
     color: #292929;
     font-weight: bold;
+    margin-bottom: 16px;
 }
 
 a.theme-link {
@@ -492,7 +509,11 @@ a.theme-link {
     font-size: 1rem;
     outline: none;
 }
-
+.btn-resume-dwnld:hover {
+    background-color: #ffffff;
+    border-color: #54B689;
+    color: #54B689;
+}
 .resume-container {
     max-width: 1140px;
 }
