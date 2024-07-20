@@ -358,6 +358,7 @@ a.text-link {
     font-size: 1.875rem;
     color: #54B689;
     margin-bottom: .5rem;
+    min-height: 60px;
 }
 
 .overview-section .item-icon .fa-html5 {
